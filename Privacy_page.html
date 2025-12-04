@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Privacy Policy - Estein</title>
+<LINK rel="stylesheet" href="LayoutWeb.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header-container">
+    <!-- Artist name/logo -->
+    <a href="Home_page.html" target="_blank">
+        <img src="Estein625.png" id="logo756" alt="Logo">
+    </a>
+
+    <div class="nav-pages">
+        <a href="index.html">Home</a>
+        <a href="Music_page.html">Music</a>
+        <a href="Biography_page.html">Biography</a>
+        <a href="Tour_page.html">Tour</a>
+        <a href="https://ditto.fm/from-the-slums">Store</a>
+        <a href="Contact_page.html">Contact</a>
+    </div>
+
+    <!-- Social + streaming icons -->
+    <div class="icon-group">
+        <a href="https://music.amazon.com/artists/B0DN2PKLZX/estein" target="_blank">
+            <img src="Amazon.png" alt="Amazon">
+        </a>
+        <a href="https://music.apple.com/us/artist/e-stein/19503884" target="_blank">
+            <img src="Apple music.png" alt="Apple Music">
+        </a>
+        <a href="https://www.instagram.com/esteinndlovu/" target="_blank">
+            <img src="IG.png" alt="Instagram">
+        </a>
+        <a href="https://open.spotify.com/artist/2wGootvsi9aVcqV5CU4pre?si=jbGp9Q4nQneHX9S3-XkCkQ" target="_blank">
+            <img src="Spotify.png" alt="Spotify">
+        </a>
+        <a href="https://x.com/Eistein_swg22" target="_blank">
+            <img src="Twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.youtube.com/@estein625" target="_blank">
+            <img src="YouTube.png" alt="YouTube">
+        </a>
+    </div>
+</div>
+
+<!-- Privacy Policy Content -->
+<div class="legal-page">
+    <div class="legal-content">
+        <h1>Privacy Policy</h1>
+        <p class="updated-date">Last updated: December 2024</p>
+        
+        <h2>1. Information We Collect</h2>
+        <p>When you sign up for updates or register for events, we may collect:</p>
+        <ul>
+            <li>Name and email address</li>
+            <li>Contact information</li>
+            <li>Event preferences</li>
+            <li>Technical data (IP address, browser type)</li>
+        </ul>
+        
+        <h2>2. How We Use Your Information</h2>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Send you updates about upcoming events</li>
+            <li>Notify you about new music releases</li>
+            <li>Improve our website and services</li>
+            <li>Respond to your inquiries</li>
+        </ul>
+        
+        <h2>3. Data Protection</h2>
+        <p>We implement security measures to protect your personal information. However, no method of transmission over the Internet is 100% secure.</p>
+        
+        <h2>4. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal data</li>
+            <li>Correct inaccurate data</li>
+            <li>Request deletion of your data</li>
+            <li>Opt-out of marketing communications</li>
+        </ul>
+        
+        <h2>5. Contact Us</h2>
+        <p>For privacy-related questions, contact: <strong>esteinndlovu@gmail.com</strong></p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="Privacy_page.html">Privacy Policy</a>
+            <a href="Terms_page.html">Terms of Service</a>
+            <a href="Cookies.html">Cookie Policy</a>
+            <a href="Contact_page.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Estein. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div class="cookie-consent" id="cookieConsent">
+    <div class="cookie-content">
+        <div class="cookie-text">
+            We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. 
+            <a href="cookies.html">Learn more</a>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-settings" onclick="window.location.href='cookies.html'">
+                Cookie Choices
+            </button>
+            <button class="cookie-btn cookie-accept" onclick="acceptCookies()">
+                I Understand
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Bottom Social Icons -->
+<div class="bottom-social">
+    <a href="https://music.amazon.com/artists/B0DN2PKLZX/estein" target="_blank">
+        <img src="Amazon.png" alt="Amazon Music">
+    </a>
+    <a href="https://music.apple.com/us/artist/e-stein/19503884" target="_blank">
+        <img src="Apple music.png" alt="Apple Music">
+    </a>
+    <a href="https://www.instagram.com/esteinndlovu/" target="_blank">
+        <img src="IG.png" alt="Instagram">
+    </a>
+    <a href="https://open.spotify.com/artist/2wGootvsi9aVcqV5CU4pre?si=jbGp9Q4nQneHX9S3-XkCkQ" target="_blank">
+        <img src="Spotify.png" alt="Spotify">
+    </a>
+    <a href="https://x.com/Eistein_swg22" target="_blank">
+        <img src="Twitter.png" alt="Twitter">
+    </a>
+    <a href="https://www.youtube.com/@estein625" target="_blank">
+        <img src="YouTube.png" alt="YouTube">
+    </a>
+</div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.header-container');
+        if (window.scrollY > 10) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    
+    // Cookie consent functions
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookieConsent').style.display = 'none';
+    }
+    
+    // Show banner if cookies not accepted
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookieConsent').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
